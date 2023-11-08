@@ -1,5 +1,7 @@
 @use 'hero';
 @use 'variables';
+@use 'shows';
+@use 'plans';
 
 @font-face{
     font-family: Avenir;
@@ -16,11 +18,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
 }
 
 body{
     background-color: variables.$bg-color;
-    font-family: 'Avenir', sans-serif;
 }
 
 @mixin text($font-size:16px){
@@ -54,4 +56,16 @@ body{
     @include text(18px);
     color: variables.$secondary-txt-color;
     text-decoration: underline;
+}
+.button{
+    display: block;
+    height: 60px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #6421ff;
+    color: variables.$secondary-txt-color;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
 }

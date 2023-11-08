@@ -23,20 +23,127 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="disney+star_logos">
-                    <button>Subscribe Now</button>
+                    <button class="button">Subscribe Now</button>
                     <span class="text">$45.90/month*</spanclass>
                 </li>
 
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="disney+star+starz_logos">
-                    <button>Subscribe Now</button>
+                    <button class="button">Subscribe Now</button>
                     <span class="text">$55.90/month*</spanclass>
                 </li>
             </ul>
             <p class="text--small">
-                The price may defer if it made through other platforms.
+                *The price may defer if it made through other platforms.
             </p>
         </div>
     </section>
+
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="soon" class="shows__tabs__button shows__tabs__button--is-active">Soon</button>
+            <button data-tab-button="most_popular" class="shows__tabs__button">Most popular</button>
+            <button data-tab-button="more" class="shows__tabs__button">More on Star+</button>
+        </nav>
+
+        <ul data-tab-id="soon" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="unchanted">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="werewolf">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="limitless">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="santa-claus">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
+        </ul>
+
+        <ul data-tab-id="most_popular" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="moon-knight">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="incredible_mr_pol">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="obi-wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="red">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="more_the_same">
+            </li>
+        </ul>
+
+        <ul data-tab-id="more" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="the_simpsons">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="premier_league">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="the_kardashians">
+            </li>
+        </ul>
+    </section>
+
+    <section class="plans">
+        <h2 class="title--big">Choose your plan</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="d+">
+                <strong class="title--small">27.90/month*</strong>
+                <p class="text--big">
+                    At Disney+ you find the latest cinema premieres, originals and unforgettable classics.
+                </p>
+                <button class="button" >Subscribe Now</button>
+            </li>
+
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="d+, star+">
+                <strong class="title--small">45.90/month*</strong>
+                <p class="text--big">
+                    Subscribe to both Disney+ and Star+. Save and enjoy now two services by the price of one.
+                </p>
+                <button class="button" id="toChange">Subscribe Now</button>
+            </li>
+
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="d+, star+, starplayz">
+                <strong class="title--small">55.90/month*</strong>
+                <p class="text--big">
+                    Disney+, Star+, STARPLAYZ on a special plan. Subscribe now these three services.
+                </p>
+                <button class="button">Subscribe Now</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *The price may defer if it made through other platforms.
+        </p>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>
