@@ -10,10 +10,17 @@
         justify-content: space-around;
         margin-top:50px;
 
+        @media (max-width:768px){
+            display: block;
+        }
+        .button{
+            margin-top:24px;
+        }
+
         &__item{
             text-align: center;
-            padding: 60px 20px 44px;
-            max-width: 320px;
+            padding: 60px 40px 44px;
+            max-width: 380px;
             width: 100%;
 
             &:nth-child(2){
